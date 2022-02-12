@@ -13,12 +13,12 @@ export default function Login() {
 
     const database = [
         {
-          username: "user1",
-          password: "pass1"
+          username: "gigatech",
+          password: "gigatech"
         },
         {
-          username: "user2",
-          password: "pass2"
+          username: "gigatech",
+          password: "gigatech"
         }
       ];
       const errors = {
@@ -82,13 +82,22 @@ export default function Login() {
 
   if(userData == null){
     return (
-      
-        <div className="app-login">
+      <>
+     
+      <div className="app-login">
+   
         <div className="login-form">
           <div className="title">Sign In</div>
+          <strong> Username:<span style={{color:'red'}}>gigatech</span> </strong>
+        <strong> password:<span style={{color:'red'}}>gigatech</span></strong> 
           {isSubmitted ? <Redirect to="/" /> : renderForm}
         </div>
       </div>
+      
+      
+      </>
+      
+        
       )
   }else{
       return(
